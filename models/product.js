@@ -10,10 +10,10 @@ productSchema = mongoose.Schema({
         required:true,
         min:0
     },
-    categories:{
+    category:{
         type:String,
         lowercase:true,
-        enum:['fruit','vegetable','vegie']
+        enum:['fruit','vegetable','dairy']
     }
 })
 
