@@ -23,6 +23,10 @@
         <li>Price:<%= product.price %> </li>
         <li>Category:<%= product.category %> </li>
     </ul>
-    <a href="/products">Go to ll Products</a>
+    <a href="/products">Go to all Products</a><br>
+    <a href="/products/<%= product._id %>/edit">Edit Product Details</a>
+    <form action="/products/<%=product._id%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
 </body>
 </html>
